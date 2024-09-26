@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RantRoom Chat</title>
+    <!-- Import Google Fonts and Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMcPi8bhgKvg1VEfqb3dS5fGxDjhN9P0VxXbR4K"
+      crossorigin="anonymous"
+    />
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">
+                <i class="fas fa-comments"></i>
+                <h1>RantRoom</h1>
+            </div>
+            <div class="user-profile">
+                <img src="user-avatar.png" alt="User Avatar">
+                <span class="username">JohnDoe</span>
+            </div>
+        </div>
+
+        <div class="chat-window">
+            <!-- Simulated chat messages -->
+            <div class="chat-message other">
+                <img src="avatar1.png" alt="Avatar" class="avatar">
+                <div class="message-content">
+                    <span class="sender-name">Alice</span>
+                    <p>Hey everyone! How's it going?</p>
+                    <span class="timestamp">10:30 AM</span>
+                </div>
+            </div>
+            <div class="chat-message user">
+                <div class="message-content">
+                    <span class="sender-name">JohnDoe (You)</span>
+                    <p>Doing great, Alice! Just working on a project.</p>
+                    <span class="timestamp">10:31 AM</span>
+                </div>
+                <img src="user-avatar.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="chat-message other">
+                <img src="avatar2.png" alt="Avatar" class="avatar">
+                <div class="message-content">
+                    <span class="sender-name">Bob</span>
+                    <p>Good morning! What's the project about?</p>
+                    <span class="timestamp">10:32 AM</span>
+                </div>
+            </div>
+            <!-- Add more chat messages as needed -->
+        </div>
+
+        <div class="chat-input-container">
+            <input type="text" placeholder="Type a message..." id="chat-input">
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript for functionality -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
